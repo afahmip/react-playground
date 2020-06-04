@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.three {
+  height: 80vh;
+  width: 100vw;
+  /* padding: 20vh 20vw; */
+}
