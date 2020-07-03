@@ -40,7 +40,6 @@ code {
   padding: 1rem;
   margin-bottom: 0.75rem;
   cursor: pointer;
-  // background: #f0eff5;
   border-radius: 16px;
   transition-duration: 0.15s;
 
@@ -50,5 +49,38 @@ code {
 
   h1 {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    padding: 1rem;
+    height: calc(100vh - 2rem);
+  }
+
+  .app-content {
+    flex-basis: 85vh;
+  }
+
+  .app-drawer {
+    display: flex;
+    flex-basis: 15vh;
+    padding: 0.5rem;
+  }
+
+  .app-option {
+    flex: none;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+    background: #f0eff5;
+
+    &:last-child {
+      // margin-right: 0;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
   }
 }
